@@ -52,11 +52,50 @@ const user = [
 ]
 
 user[1].email
-console.log(tinder);
+// console.log(tinder);
 
-console.log(Object.keys(tinder))
-console.log(Object.values(tinder))
-console.log(Object.entries(tinder))
+// console.log(Object.keys(tinder))
+// console.log(Object.values(tinder))
+// console.log(Object.entries(tinder))
 
 
-console.log(tinder.hasOwnProperty('isloogedin'))
+// console.log(tinder.hasOwnProperty('isloogedin'));
+
+
+
+
+const course ={
+    coursename : "js hindi",
+    price : 999,
+    courseinstructor : "hitesh"
+
+}
+
+//course.courseinstructor   // one way of accesing object
+
+const {courseinstructor : instructor} = course;     // thats anotherway of accesing object 
+
+// console.log(courseinstructor)
+
+console.log(instructor)
+
+
+
+
+
+ // json    //api
+// {
+//   "name": "vivek",
+//   "course": "js in hindi",
+//   "price":"free"
+
+// }
+
+//API in array format
+
+[
+
+    {},
+    {},
+    {}
+]
