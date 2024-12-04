@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>IIT BOMBAY</h1>
+   <button id="button">Stop</button>
+
+</body>
+<script>
+    const sayVivek =function(){
+        console.log("vivek kumar")
+    }
+
+    const chanfeText = function(){
+       document.querySelector("h1").innerHTML = "BEST js series"
+    }
+
+  const Changeme =   setTimeout(chanfeText, 2000)
+
+  document.querySelector('#button').addEventListener('click', function(){
+    clearTimeout(Changeme);
+    console.log("STOPPED")
+  })
+
+</script>
+</html>
