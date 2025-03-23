@@ -18,12 +18,11 @@ const sayDate = function(str){
 
  
 
-  let invervalid = null
+    let invervalid = null
   
   document.querySelector('#START').addEventListener('click', function(){
    
-    invervalid()
-    setInterval(sayDate, 1000 , "hi")
+    invervalid = setInterval(sayDate, 1000 , "hi")
     console.log("start")
   })
 
@@ -32,7 +31,7 @@ const sayDate = function(str){
    document.querySelector('#STOP').addEventListener('click',function(){
     clearInterval(invervalid)
 
-    invervalid =setInterval(sayDate ,100000000000000000 )
+    invervalid =null
   
    console.log("STOP")
   })
@@ -40,3 +39,6 @@ const sayDate = function(str){
 
 </script>
 </html>
+
+
+
